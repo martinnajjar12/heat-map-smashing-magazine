@@ -275,3 +275,98 @@ article .d-flex {
   background-color: var(--fifth-spare-color);
   transform: rotate(-10deg);
 }
+
+/* ---------------------- MORE ARTICLES DIV ------------------ */
+
+.more-articles-div {
+  flex-wrap: wrap;
+}
+
+.article1,
+.article2,
+.article3,
+.article4,
+.article5,
+.article6 {
+  width: 33.333333%;
+  height: 394px;
+  position: relative;
+}
+
+.article1 {
+  background-color: var(--fourth-spare-color);
+}
+
+.article2 {
+  background-color: var(--fifth-spare-color);
+}
+
+.article3 {
+  background-color: var(--items-bg-color);
+}
+
+.article4 {
+  background-color: var(--secondary-bg-color);
+}
+
+.article5 {
+  background-color: var(--fifth-spare-color);
+}
+
+.article6 {
+  background-color: var(--fourth-spare-color);
+}
+
+.article3 .time {
+  background-color: var(--secondary-bg-color);
+}
+
+.time {
+  width: 40px;
+  height: 18px;
+  background-color: var(--items-bg-color);
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+
+.article2 .title,
+.article5 .title {
+  background-color: var(--main-bg-color);
+}
+
+.title {
+  width: 380px;
+  height: 40px;
+  background-color: var(--fifth-spare-color);
+  position: absolute;
+  top: 70px;
+  left: 50px;
+}
+
+.citing {
+  width: 50px;
+  height: 18px;
+  background-color: #fff;
+  position: absolute;
+  top: 130px;
+  left: 50px;
+}
+
+.paragraph {
+  width: 380px;
+  height: 120px;
+  background-color: var(--main-bg-color);
+  position: absolute;
+  left: 50px;
+  top: 160px;
+}
+
+.second-arrow {
+  background-color: #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  width: 100px;
+  height: 20px;
+}
