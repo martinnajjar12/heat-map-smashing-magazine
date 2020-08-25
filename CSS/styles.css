@@ -30,6 +30,10 @@ a {
   border-radius: 10px;
 }
 
+.main-container {
+  position: relative;
+}
+
 /* ----------------------- NAVBAR ---------------- */
 
 .nav {
@@ -171,4 +175,48 @@ article .d-flex {
   left: 51px;
   width: 100px;
   height: 20px;
+}
+
+/* ----------------------- THE CENTERED AND SWITCHER DIVS ---------------------- */
+
+.centered-div {
+  position: absolute;
+  top: 10px;
+  left: calc((100% - 290px) / 2);
+}
+
+.centered-div div:nth-child(1) {
+  position: absolute;
+  top: 10px;
+  left: calc(100% / 2);
+  background-color: #fff;
+  width: 300px;
+  height: 50px;
+}
+
+.centered-div div:nth-child(2) {
+  position: absolute;
+  top: 40px;
+  left: calc((100% + 192px) / 2);
+  background-color: #fff;
+  width: 100px;
+  height: 50px;
+}
+
+.switcher1 {
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 140px;
+  width: 40px;
+  height: 40px;
+}
+
+.switcher2 {
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 80px;
+  height: 40px;
 }
