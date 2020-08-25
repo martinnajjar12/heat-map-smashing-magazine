@@ -2,6 +2,8 @@
   --main-bg-color: #696969;
   --secondary-bg-color: #a9a9a9;
   --items-bg-color: #d3d3d3;
+  --fourth-spare-color: #757575;
+  --fifth-spare-color: #999;
 }
 
 * {
@@ -14,14 +16,20 @@ li {
   list-style-type: none;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .wrapper {
   width: 1440px;
+  margin: 0 auto;
 }
+
+/* ----------------------- NAVBAR ---------------- */
 
 .nav {
   width: 100%;
   padding: 1.5rem;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: var(--items-bg-color);
@@ -32,7 +40,6 @@ li {
 }
 
 .nav-btn {
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -73,4 +80,49 @@ li {
   width: 200px;
   border: none;
   margin-left: 10px;
+}
+
+/* ----------------------- MAIN SECTION ---------------- */
+
+.articles-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.article-div {
+  width: 720px;
+  height: 724px;
+}
+
+.article-div1 {
+  background-color: var(--main-bg-color);
+  padding: 175px 50px 50px 50px;
+}
+
+.article-div2 {
+  background-color: var(--secondary-bg-color);
+  padding: 175px 50px 50px 50px;
+}
+
+.article-div3 {
+  background-color: var(--items-bg-color);
+  padding: 50px;
+}
+
+.article-div4 {
+  background-color: var(--fourth-spare-color);
+  padding: 50px;
+}
+
+article .d-flex {
+  align-items: center;
+}
+
+.writer-img {
+  width: 86px;
+  height: 96px;
+  background-color: var(--fifth-spare-color);
+  margin: 0 25px 25px 0;
+  transform: rotate(35deg);
+  border-radius: 10px;
 }
