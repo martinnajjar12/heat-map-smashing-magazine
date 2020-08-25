@@ -6,6 +6,10 @@
   --fifth-spare-color: #999;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -369,4 +373,72 @@ article .d-flex {
   left: 50px;
   width: 100px;
   height: 20px;
+}
+
+.more-articles {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 2rem 2rem 0.75rem;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 0;
+  border-bottom: 5px solid red;
+  letter-spacing: 3px;
+}
+
+.more-articles i {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+/* SHIPPING SECTION */
+
+.shipping-container {
+  justify-content: center;
+  align-items: center;
+  background-color: #a9a9a9;
+  margin-top: 60px;
+}
+
+.shipping {
+  padding: 1.5em 15em;
+}
+
+.shipping > * {
+  margin-top: 2rem;
+}
+
+.shipping-title,
+.shipping > p {
+  text-align: center;
+}
+
+.shipping-date {
+  font-size: 1.2em;
+}
+
+.shipping-title {
+  font-size: 2rem;
+}
+
+.shipping-content {
+  font-size: 1.2rem;
+  line-height: 1.5em;
+}
+
+.shipping-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 370px;
+  height: 65px;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.shipping-img {
+  width: 900px;
+  height: 517px;
+  background-color: white;
 }
