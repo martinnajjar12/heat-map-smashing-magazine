@@ -25,6 +25,11 @@ li {
   margin: 0 auto;
 }
 
+.b-radius-10,
+a {
+  border-radius: 10px;
+}
+
 /* ----------------------- NAVBAR ---------------- */
 
 .nav {
@@ -58,7 +63,6 @@ li {
   background-color: var(--items-bg-color);
   color: aliceblue;
   text-decoration: none;
-  border-radius: 10px;
 }
 
 .nav-btn a:hover {
@@ -68,7 +72,6 @@ li {
 .search-container {
   padding: 1.2rem 1.75rem;
   background-color: white;
-  border-radius: 10px;
 }
 
 .search-container i {
@@ -91,17 +94,20 @@ li {
 
 .article-div {
   width: 720px;
-  height: 724px;
+  height: 524px;
+  position: relative;
 }
 
 .article-div1 {
   background-color: var(--main-bg-color);
   padding: 175px 50px 50px 50px;
+  height: 724px;
 }
 
 .article-div2 {
   background-color: var(--secondary-bg-color);
   padding: 175px 50px 50px 50px;
+  height: 724px;
 }
 
 .article-div3 {
@@ -124,5 +130,45 @@ article .d-flex {
   background-color: var(--fifth-spare-color);
   margin: 0 25px 25px 0;
   transform: rotate(35deg);
-  border-radius: 10px;
+}
+
+.article-title {
+  font-size: 35px;
+}
+
+.article-title i,
+.article-title span {
+  font-size: 1rem;
+}
+
+/*
+  ===================================
+        ARTICLE BUTTON
+  ===================================
+*/
+
+.article-hashtag {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.article-hashtag li {
+  flex: 1;
+}
+
+.article-hashtag a {
+  display: block;
+  width: 120px;
+  background-color: #fff;
+  padding: 1.2rem;
+  margin-left: 20px;
+}
+
+.next-arrow {
+  background-color: #fff;
+  position: absolute;
+  bottom: 80px;
+  left: 51px;
+  width: 100px;
+  height: 20px;
 }
