@@ -327,13 +327,24 @@ article .d-flex {
 .article3,
 .article4,
 .article5,
-.article6 {
+.article6,
+.article9,
+.article8 {
   width: 33.333333%;
   height: 394px;
   position: relative;
 }
 
-.article1 {
+.article4,
+.article5,
+.article6,
+.article8,
+.article9 {
+  height: 723px;
+}
+
+.article1,
+.article8 {
   background-color: var(--fourth-spare-color);
 }
 
@@ -341,11 +352,13 @@ article .d-flex {
   background-color: var(--fifth-spare-color);
 }
 
-.article3 {
+.article3,
+.article-footer {
   background-color: var(--items-bg-color);
 }
 
-.article4 {
+.article4,
+.article9 {
   background-color: var(--secondary-bg-color);
 }
 
@@ -413,7 +426,7 @@ article .d-flex {
 
 .article4 button {
   position: absolute;
-  bottom: 30px;
+  bottom: 94px;
   left: 50px;
 }
 
@@ -432,6 +445,29 @@ article .d-flex {
 .more-articles i {
   font-size: 18px;
   margin-left: 20px;
+}
+
+.article-img {
+  width: 245px;
+  height: 290px;
+  margin: 20px auto;
+  background-color: #d3d3d3;
+}
+
+.article4 > .title {
+  top: 341px;
+}
+
+.article4 > .paragraph {
+  top: 410px;
+}
+
+.article-footer {
+  position: absolute;
+  bottom: 47px;
+  left: 161px;
+  width: 146px;
+  height: 17px;
 }
 
 /* SHIPPING SECTION */
