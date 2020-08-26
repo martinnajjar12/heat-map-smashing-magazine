@@ -441,4 +441,92 @@ article .d-flex {
   width: 900px;
   height: 517px;
   background-color: white;
+  margin: 1.5rem auto 0 auto;
+}
+
+/* WRITER'S ARTICLE */
+
+.community-section {
+  padding: 2.8rem 0;
+}
+
+.person-week {
+  width: 90%;
+  margin: auto;
+}
+
+.week-image {
+  width: 220px;
+  height: 220px;
+  background-color: #999;
+  float: left;
+}
+
+.community-title,
+.person-info {
+  margin-left: 240px;
+}
+
+.community-title {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 7px;
+}
+
+.person-info {
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+.writer-container {
+  width: 90%;
+  margin: 90px auto 0;
+  clear: left;
+}
+
+.writer-pic {
+  width: 60px;
+  height: 60px;
+  background-color: #999;
+  float: left;
+}
+
+.writer-name,
+.writer-title,
+.writer-info {
+  margin-left: 90px;
+}
+
+.writer-name,
+.writer-info {
+  font-size: 20px;
+}
+
+.writer-title {
+  font-size: 32px;
+}
+
+.writer-info {
+  line-height: 2.5rem;
+}
+
+.writer-article:nth-child(odd) {
+  float: left;
+  width: 49%;
+}
+.writer-article:nth-child(even) {
+  float: right;
+  width: 49%;
+}
+
+.writer-article {
+  margin-top: 150px;
+}
+
+.section-division {
+  width: 335px;
+  clear: both;
+  margin: 1250px auto 0;
+  letter-spacing: 10px;
+  font-size: 15px;
 }
