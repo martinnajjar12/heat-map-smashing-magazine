@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -50,13 +50,26 @@ a {
   height: 65px;
   border: none;
   font-size: 1.2rem;
-  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.rotate-15 {
+  transform: rotate(-15deg);
+  transition: 0.4s ease-in;
+}
+
+.rotate-15:hover {
+  transform: rotate(0);
+  cursor: pointer;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 /* ----------------------- NAVBAR ---------------- */
 
 .nav {
-  width: 100%;
   padding: 1.5rem;
   justify-content: space-around;
   align-items: center;
@@ -80,12 +93,35 @@ a {
 
 .nav-btn a {
   display: block;
-  width: 100%;
   padding: 1rem;
   font-size: 1.5rem;
   background-color: var(--items-bg-color);
   color: aliceblue;
   text-decoration: none;
+}
+
+.article-hashtag a {
+  display: block;
+  width: 120px;
+  background-color: #fff;
+  padding: 1.2rem;
+  margin-left: 20px;
+}
+
+.bottom-footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.copyright-section a {
+  text-decoration: underline;
+}
+
+.bottom-nav-container a {
+  font-size: 13px;
+  text-decoration: underline;
+  padding: 0 10px;
+  line-height: 30px;
 }
 
 .nav-btn a:hover {
@@ -152,7 +188,6 @@ article .d-flex {
   height: 96px;
   background-color: var(--fifth-spare-color);
   margin: 0 25px 25px 0;
-  transform: rotate(35deg);
 }
 
 .article-title {
@@ -172,19 +207,10 @@ article .d-flex {
 
 .article-hashtag {
   margin-top: 30px;
-  width: 100%;
 }
 
 .article-hashtag li {
   flex: 1;
-}
-
-.article-hashtag a {
-  display: block;
-  width: 120px;
-  background-color: #fff;
-  padding: 1.2rem;
-  margin-left: 20px;
 }
 
 .next-arrow {
@@ -277,6 +303,10 @@ article .d-flex {
   margin-left: 0;
 }
 
+.membership button {
+  margin-left: 140px;
+}
+
 .membership-logo {
   position: absolute;
   top: -45px;
@@ -284,7 +314,6 @@ article .d-flex {
   width: 300px;
   height: 300px;
   background-color: var(--fifth-spare-color);
-  transform: rotate(-10deg);
 }
 
 /* ---------------------- MORE ARTICLES DIV ------------------ */
@@ -328,10 +357,6 @@ article .d-flex {
   background-color: var(--fourth-spare-color);
 }
 
-.article3 .time {
-  background-color: var(--secondary-bg-color);
-}
-
 .time {
   width: 40px;
   height: 18px;
@@ -341,9 +366,8 @@ article .d-flex {
   left: 50px;
 }
 
-.article2 .title,
-.article5 .title {
-  background-color: var(--main-bg-color);
+.article3 .time {
+  background-color: var(--secondary-bg-color);
 }
 
 .title {
@@ -353,6 +377,11 @@ article .d-flex {
   position: absolute;
   top: 70px;
   left: 50px;
+}
+
+.article2 .title,
+.article5 .title {
+  background-color: var(--main-bg-color);
 }
 
 .citing {
@@ -384,7 +413,6 @@ article .d-flex {
 
 .article4 button {
   position: absolute;
-
   bottom: 30px;
   left: 50px;
 }
@@ -441,16 +469,6 @@ article .d-flex {
   line-height: 1.5em;
 }
 
-/* .shipping-btn {
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 370px;
-  height: 65px;
-  border: none;
-  font-size: 1.2rem;
-} */
-
 .shipping-img {
   width: 900px;
   height: 517px;
@@ -472,6 +490,7 @@ article .d-flex {
 .week-image {
   width: 220px;
   height: 220px;
+  margin-right: 60px;
   background-color: #999;
   float: left;
 }
@@ -524,17 +543,18 @@ article .d-flex {
   line-height: 2.5rem;
 }
 
+.writer-article {
+  margin-top: 150px;
+}
+
 .writer-article:nth-child(odd) {
   float: left;
   width: 49%;
 }
+
 .writer-article:nth-child(even) {
   float: right;
   width: 49%;
-}
-
-.writer-article {
-  margin-top: 150px;
 }
 
 .section-division {
@@ -548,7 +568,6 @@ article .d-flex {
 /* ---------------------- DESIGN SYSTEM SECTION ---------------- */
 
 .design-system-container {
-  width: 100%;
   height: 350px;
   background-color: var(--items-bg-color);
   padding: 40px 50px;
@@ -572,19 +591,18 @@ article .d-flex {
 }
 
 .left-container .third {
-  width: 100%;
   height: 80px;
   background-color: var(--secondary-bg-color);
   margin-top: 30px;
 }
 
+.left-container button {
+  margin: 30px 0 0;
+}
+
 .left-container button:hover {
   background-color: var(--secondary-bg-color);
   cursor: pointer;
-}
-
-.left-container button {
-  margin: 30px 0 0;
 }
 
 .right-container {
@@ -596,20 +614,18 @@ article .d-flex {
   width: 240px;
   height: 300px;
   background-color: var(--secondary-bg-color);
-  transform: rotate(-10deg);
   position: absolute;
   top: -80px;
   left: 250px;
 }
 
 /*
-================================================================ 
+================================================================
                 BOOKE GUIDE SECTION
-================================================================ 
+================================================================
 */
 
 .guides-container {
-  width: 100%;
   padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -652,7 +668,6 @@ article .d-flex {
 
 .guide-info,
 .guide-title {
-  width: 100%;
   height: 71px;
   background-color: #d3d3d3;
 }
@@ -666,7 +681,6 @@ article .d-flex {
 }
 
 .guide-image {
-  width: 100%;
   height: 40%;
   border-radius: 10px 10px 0 0;
   background-color: var(--items-bg-color);
@@ -720,6 +734,12 @@ article .d-flex {
   width: 300px;
 }
 
+.bottom-nav-container ul {
+  width: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .bottom-footer .first-nav ul {
   margin-top: 40px;
   justify-content: center;
@@ -740,11 +760,6 @@ article .d-flex {
   left: -5px;
 }
 
-.bottom-footer a {
-  text-decoration: none;
-  color: #000;
-}
-
 .copyright-section {
   font-size: 13px;
   width: 400px;
@@ -753,26 +768,9 @@ article .d-flex {
   line-height: 28px;
 }
 
-.copyright-section a {
-  text-decoration: underline;
-}
-
 .bottom-nav-container {
   width: 1000px;
   margin: 40px auto;
   justify-content: space-between;
   align-items: center;
-}
-
-.bottom-nav-container ul {
-  width: 400px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.bottom-nav-container a {
-  font-size: 13px;
-  text-decoration: underline;
-  padding: 0 10px;
-  line-height: 30px;
 }
