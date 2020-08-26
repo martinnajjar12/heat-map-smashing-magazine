@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -40,6 +40,17 @@ a {
 
 .main-container {
   position: relative;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 370px;
+  height: 65px;
+  border: none;
+  font-size: 1.2rem;
+  transition: 0.3s ease-in;
 }
 
 /* ----------------------- NAVBAR ---------------- */
@@ -263,11 +274,7 @@ article .d-flex {
 }
 
 .member-btn {
-  width: 400px;
-  height: 66px;
-  align-self: flex-start;
-  margin-top: 35px;
-  margin-left: 8rem;
+  margin-left: 0;
 }
 
 .membership-logo {
@@ -375,6 +382,13 @@ article .d-flex {
   height: 20px;
 }
 
+.article4 button {
+  position: absolute;
+
+  bottom: 30px;
+  left: 50px;
+}
+
 .more-articles {
   display: block;
   margin: 0.5rem auto;
@@ -427,7 +441,7 @@ article .d-flex {
   line-height: 1.5em;
 }
 
-.shipping-btn {
+/* .shipping-btn {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
@@ -435,7 +449,7 @@ article .d-flex {
   height: 65px;
   border: none;
   font-size: 1.2rem;
-}
+} */
 
 .shipping-img {
   width: 900px;
@@ -570,12 +584,7 @@ article .d-flex {
 }
 
 .left-container button {
-  width: 50%;
-  height: 40px;
-  background-color: var(--fourth-spare-color);
-  margin-top: 30px;
-  border: none;
-  transition: 0.3s ease-in;
+  margin: 30px 0 0;
 }
 
 .right-container {
@@ -591,4 +600,108 @@ article .d-flex {
   position: absolute;
   top: -80px;
   left: 250px;
+}
+
+/*
+================================================================ 
+                BOOKE GUIDE SECTION
+================================================================ 
+*/
+
+.guides-container {
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guide:not(:nth-child(4)) {
+  padding: 2.5rem;
+}
+
+.guide * + * {
+  margin-top: 20px;
+}
+
+.lower-section {
+  padding: 2.5rem;
+  margin-top: 0;
+}
+
+.guide1,
+.guide2 {
+  width: 620px;
+  height: 420px;
+  background-color: var(--fifth-spare-color);
+  margin: 0 auto;
+}
+
+.guide3,
+.guide4 {
+  width: 620px;
+  height: 820px;
+  background-color: var(--secondary-bg-color);
+  margin: 50px auto 0;
+}
+
+.guide-intro {
+  width: 30%;
+  height: 18px;
+  background-color: #d3d3d3;
+}
+
+.guide-info,
+.guide-title {
+  width: 100%;
+  height: 71px;
+  background-color: #d3d3d3;
+}
+
+.guide-info {
+  height: 130px;
+}
+
+.guide .button {
+  margin-left: 0;
+}
+
+.guide-image {
+  width: 100%;
+  height: 40%;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--items-bg-color);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container input {
+  height: 65px;
+  width: 65%;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.button-container .button {
+  width: 25%;
+  margin: 0;
+  border-radius: 0 20px 20px 0;
+  background-color: var(--main-bg-color);
+}
+
+.guide-footer {
+  width: 50%;
+  height: 73px;
+  margin: 40px auto 0;
+  background-color: var(--items-bg-color);
+}
+
+.guide-division {
+  margin: 50px auto;
+  width: 264px;
 }
