@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -81,7 +81,7 @@ a {
 .nav-btn a {
   display: block;
   width: 100%;
-  padding: 1em;
+  padding: 1rem;
   font-size: 1.5rem;
   background-color: var(--items-bg-color);
   color: aliceblue;
@@ -704,4 +704,75 @@ article .d-flex {
 .guide-division {
   margin: 50px auto;
   width: 264px;
+}
+
+/* --------------------- BOTTOM FOOTER SECTION ------------- */
+
+.bottom-footer {
+  padding: 50px 50px 20px 50px;
+  background-color: var(--items-bg-color);
+}
+
+.bottom-footer h1 {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.bottom-footer .first-nav ul {
+  margin-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bottom-footer .first-nav li {
+  list-style: initial;
+  text-transform: capitalize;
+  margin-left: 10px;
+  list-style-position: inside;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.bottom-footer li span {
+  position: relative;
+  left: -5px;
+}
+
+.bottom-footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.copyright-section {
+  font-size: 13px;
+  width: 400px;
+  margin: 50px auto 0;
+  text-align: center;
+  line-height: 28px;
+}
+
+.copyright-section a {
+  text-decoration: underline;
+}
+
+.bottom-nav-container {
+  width: 1000px;
+  margin: 40px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-nav-container ul {
+  width: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bottom-nav-container a {
+  font-size: 13px;
+  text-decoration: underline;
+  padding: 0 10px;
+  line-height: 30px;
 }
