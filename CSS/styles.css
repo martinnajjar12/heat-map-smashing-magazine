@@ -1,0 +1,812 @@
+:root {
+  --main-bg-color: #696969;
+  --secondary-bg-color: #a9a9a9;
+  --items-bg-color: #d3d3d3;
+  --fourth-spare-color: #757575;
+  --fifth-spare-color: #999;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.b-radius-10,
+a {
+  border-radius: 10px;
+}
+
+.b-radius-20 {
+  border-radius: 20px;
+}
+
+.main-container {
+  position: relative;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 370px;
+  height: 65px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.rotate-15 {
+  transform: rotate(-15deg);
+  transition: 0.4s ease-in;
+}
+
+.rotate-15:hover {
+  transform: rotate(0);
+  cursor: pointer;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+/* ----------------------- NAVBAR ---------------- */
+
+.nav {
+  padding: 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--items-bg-color);
+}
+
+.nav > ul {
+  flex: 1;
+}
+
+.nav-btn {
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 200px;
+  height: 100px;
+  background-color: var(--main-bg-color);
+}
+
+.nav-btn a {
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: var(--items-bg-color);
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.article-hashtag a {
+  display: block;
+  width: 120px;
+  background-color: #fff;
+  padding: 1.2rem;
+  margin-left: 20px;
+}
+
+.bottom-footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.copyright-section a {
+  text-decoration: underline;
+}
+
+.bottom-nav-container a {
+  font-size: 13px;
+  text-decoration: underline;
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.nav-btn a:hover {
+  background-color: var(--secondary-bg-color);
+}
+
+.search-container {
+  padding: 1.2rem 1.75rem;
+  background-color: white;
+}
+
+.search-container i {
+  color: var(--main-bg-color);
+  font-size: 1.5rem;
+}
+
+.search {
+  width: 200px;
+  border: none;
+  margin-left: 10px;
+}
+
+/* ----------------------- MAIN SECTION ---------------- */
+
+.articles-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.article-div {
+  width: 720px;
+  height: 524px;
+  position: relative;
+}
+
+.article-div1 {
+  background-color: var(--main-bg-color);
+  padding: 175px 50px 50px 50px;
+  height: 724px;
+}
+
+.article-div2 {
+  background-color: var(--secondary-bg-color);
+  padding: 175px 50px 50px 50px;
+  height: 724px;
+}
+
+.article-div3 {
+  background-color: var(--items-bg-color);
+  padding: 50px;
+}
+
+.article-div4 {
+  background-color: var(--fourth-spare-color);
+  padding: 50px;
+}
+
+article .d-flex {
+  align-items: center;
+}
+
+.writer-img {
+  width: 86px;
+  height: 96px;
+  background-color: var(--fifth-spare-color);
+  margin: 0 25px 25px 0;
+}
+
+.article-title {
+  font-size: 35px;
+}
+
+.article-title i,
+.article-title span {
+  font-size: 1rem;
+}
+
+/*
+  ===================================
+        ARTICLE BUTTON
+  ===================================
+*/
+
+.article-hashtag {
+  margin-top: 30px;
+}
+
+.article-hashtag li {
+  flex: 1;
+}
+
+.next-arrow {
+  background-color: #fff;
+  position: absolute;
+  bottom: 80px;
+  left: 51px;
+  width: 100px;
+  height: 20px;
+}
+
+/* ----------------------- THE CENTERED AND SWITCHER DIVS ---------------------- */
+
+.centered-div {
+  position: absolute;
+  top: 10px;
+  left: calc((100% - 290px) / 2);
+}
+
+.centered-div div:nth-child(1) {
+  position: absolute;
+  top: 10px;
+  left: calc(100% / 2);
+  background-color: #fff;
+  width: 300px;
+  height: 50px;
+}
+
+.centered-div div:nth-child(2) {
+  position: absolute;
+  top: 40px;
+  left: calc((100% + 192px) / 2);
+  background-color: #fff;
+  width: 100px;
+  height: 50px;
+}
+
+.switcher1 {
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 140px;
+  width: 40px;
+  height: 40px;
+}
+
+.switcher2 {
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 80px;
+  height: 40px;
+}
+
+/*
+  ===================================
+        membershio
+  ===================================
+*/
+
+.membership-container {
+  background-color: var(--main-bg-color);
+  padding: 2em 0;
+  position: relative;
+}
+
+.membership {
+  width: 55em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  width: 600px;
+  height: 90px;
+  background-color: #999;
+}
+
+.prom {
+  width: 550px;
+  height: 66px;
+  background-color: #999;
+  margin-top: 20px;
+  margin-left: 48px;
+}
+
+.member-btn {
+  margin-left: 0;
+}
+
+.membership button {
+  margin-left: 140px;
+}
+
+.membership-logo {
+  position: absolute;
+  top: -45px;
+  right: 222px;
+  width: 300px;
+  height: 300px;
+  background-color: var(--fifth-spare-color);
+}
+
+/* ---------------------- MORE ARTICLES DIV ------------------ */
+
+.more-articles-div {
+  flex-wrap: wrap;
+}
+
+.article1,
+.article2,
+.article3,
+.article4,
+.article5,
+.article6,
+.article9,
+.article8 {
+  width: 33.333333%;
+  height: 394px;
+  position: relative;
+}
+
+.article4,
+.article5,
+.article6,
+.article8,
+.article9 {
+  height: 723px;
+}
+
+.article1,
+.article8 {
+  background-color: var(--fourth-spare-color);
+}
+
+.article2 {
+  background-color: var(--fifth-spare-color);
+}
+
+.article3,
+.article-footer {
+  background-color: var(--items-bg-color);
+}
+
+.article4,
+.article9 {
+  background-color: var(--secondary-bg-color);
+}
+
+.article5 {
+  background-color: var(--fifth-spare-color);
+}
+
+.article6 {
+  background-color: var(--fourth-spare-color);
+}
+
+.time {
+  width: 40px;
+  height: 18px;
+  background-color: var(--items-bg-color);
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+
+.article3 .time {
+  background-color: var(--secondary-bg-color);
+}
+
+.title {
+  width: 380px;
+  height: 40px;
+  background-color: var(--fifth-spare-color);
+  position: absolute;
+  top: 70px;
+  left: 50px;
+}
+
+.article2 .title,
+.article5 .title {
+  background-color: var(--main-bg-color);
+}
+
+.citing {
+  width: 50px;
+  height: 18px;
+  background-color: #fff;
+  position: absolute;
+  top: 130px;
+  left: 50px;
+}
+
+.paragraph {
+  width: 380px;
+  height: 120px;
+  background-color: var(--main-bg-color);
+  position: absolute;
+  left: 50px;
+  top: 160px;
+}
+
+.second-arrow {
+  background-color: #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  width: 100px;
+  height: 20px;
+}
+
+.article4 button {
+  position: absolute;
+  bottom: 94px;
+  left: 50px;
+}
+
+.more-articles {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 2rem 2rem 0.75rem;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 0;
+  border-bottom: 5px solid red;
+  letter-spacing: 3px;
+}
+
+.more-articles i {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.article-img {
+  width: 245px;
+  height: 290px;
+  margin: 20px auto;
+  background-color: #d3d3d3;
+}
+
+.article4 > .title {
+  top: 341px;
+}
+
+.article4 > .paragraph {
+  top: 410px;
+}
+
+.article-footer {
+  position: absolute;
+  bottom: 47px;
+  left: 161px;
+  width: 146px;
+  height: 17px;
+}
+
+/* SHIPPING SECTION */
+
+.shipping-container {
+  justify-content: center;
+  align-items: center;
+  background-color: #a9a9a9;
+  margin-top: 60px;
+}
+
+.shipping {
+  padding: 1.5em 15em;
+}
+
+.shipping > * {
+  margin-top: 2rem;
+}
+
+.shipping-title,
+.shipping > p {
+  text-align: center;
+}
+
+.shipping-date {
+  font-size: 1.2em;
+}
+
+.shipping-title {
+  font-size: 2rem;
+}
+
+.shipping-content {
+  font-size: 1.2rem;
+  line-height: 1.5em;
+}
+
+.shipping-img {
+  width: 900px;
+  height: 517px;
+  background-color: white;
+  margin: 1.5rem auto 0 auto;
+}
+
+/* WRITER'S ARTICLE */
+
+.community-section {
+  padding: 2.8rem 0;
+}
+
+.person-week {
+  width: 90%;
+  margin: auto;
+}
+
+.week-image {
+  width: 220px;
+  height: 220px;
+  margin-right: 60px;
+  background-color: #999;
+  float: left;
+}
+
+.community-title,
+.person-info {
+  margin-left: 240px;
+}
+
+.community-title {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 7px;
+}
+
+.person-info {
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+.writer-container {
+  width: 90%;
+  margin: 90px auto 0;
+  clear: left;
+}
+
+.writer-pic {
+  width: 60px;
+  height: 60px;
+  background-color: #999;
+  float: left;
+}
+
+.writer-name,
+.writer-title,
+.writer-info {
+  margin-left: 90px;
+}
+
+.writer-name,
+.writer-info {
+  font-size: 20px;
+}
+
+.writer-title {
+  font-size: 32px;
+}
+
+.writer-info {
+  line-height: 2.5rem;
+}
+
+.writer-article {
+  margin-top: 150px;
+}
+
+.writer-article:nth-child(odd) {
+  float: left;
+  width: 49%;
+}
+
+.writer-article:nth-child(even) {
+  float: right;
+  width: 49%;
+}
+
+.section-division {
+  width: 335px;
+  clear: both;
+  margin: 1250px auto 0;
+  letter-spacing: 10px;
+  font-size: 15px;
+}
+
+/* ---------------------- DESIGN SYSTEM SECTION ---------------- */
+
+.design-system-container {
+  height: 350px;
+  background-color: var(--items-bg-color);
+  padding: 40px 50px;
+}
+
+.left-container {
+  width: 60%;
+}
+
+.left-container .first {
+  width: 200px;
+  height: 20px;
+  background-color: var(--main-bg-color);
+}
+
+.left-container .second {
+  width: 300px;
+  height: 40px;
+  background-color: var(--fifth-spare-color);
+  margin-top: 20px;
+}
+
+.left-container .third {
+  height: 80px;
+  background-color: var(--secondary-bg-color);
+  margin-top: 30px;
+}
+
+.left-container button {
+  margin: 30px 0 0;
+}
+
+.left-container button:hover {
+  background-color: var(--secondary-bg-color);
+  cursor: pointer;
+}
+
+.right-container {
+  width: 40%;
+  position: relative;
+}
+
+.book {
+  width: 240px;
+  height: 300px;
+  background-color: var(--secondary-bg-color);
+  position: absolute;
+  top: -80px;
+  left: 250px;
+}
+
+/*
+================================================================
+                BOOKE GUIDE SECTION
+================================================================
+*/
+
+.guides-container {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guide:not(:nth-child(4)) {
+  padding: 2.5rem;
+}
+
+.guide * + * {
+  margin-top: 20px;
+}
+
+.lower-section {
+  padding: 2.5rem;
+  margin-top: 0;
+}
+
+.guide1,
+.guide2 {
+  width: 620px;
+  height: 420px;
+  background-color: var(--fifth-spare-color);
+  margin: 0 auto;
+}
+
+.guide3,
+.guide4 {
+  width: 620px;
+  height: 820px;
+  background-color: var(--secondary-bg-color);
+  margin: 50px auto 0;
+}
+
+.guide-intro {
+  width: 30%;
+  height: 18px;
+  background-color: #d3d3d3;
+}
+
+.guide-info,
+.guide-title {
+  height: 71px;
+  background-color: #d3d3d3;
+}
+
+.guide-info {
+  height: 130px;
+}
+
+.guide .button {
+  margin-left: 0;
+}
+
+.guide-image {
+  height: 40%;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--items-bg-color);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container input {
+  height: 65px;
+  width: 65%;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.button-container .button {
+  width: 25%;
+  margin: 0;
+  border-radius: 0 20px 20px 0;
+  background-color: var(--main-bg-color);
+}
+
+.guide-footer {
+  width: 50%;
+  height: 73px;
+  margin: 40px auto 0;
+  background-color: var(--items-bg-color);
+}
+
+.guide-division {
+  margin: 50px auto;
+  width: 264px;
+}
+
+/* --------------------- BOTTOM FOOTER SECTION ------------- */
+
+.bottom-footer {
+  padding: 50px 50px 20px 50px;
+  background-color: var(--items-bg-color);
+}
+
+.bottom-footer h1 {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.bottom-nav-container ul {
+  width: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bottom-footer .first-nav ul {
+  margin-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bottom-footer .first-nav li {
+  list-style: initial;
+  text-transform: capitalize;
+  margin-left: 10px;
+  list-style-position: inside;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.bottom-footer li span {
+  position: relative;
+  left: -5px;
+}
+
+.copyright-section {
+  font-size: 13px;
+  width: 400px;
+  margin: 50px auto 0;
+  text-align: center;
+  line-height: 28px;
+}
+
+.bottom-nav-container {
+  width: 1000px;
+  margin: 40px auto;
+  justify-content: space-between;
+  align-items: center;
+}

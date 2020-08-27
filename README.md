@@ -1,65 +1,39 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Smashing Magazine heat-map
 
-> One paragraph statement about the project.
+> A heat-map for the Main Page.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
-
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML5
+- CSS3
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+[Live Demo Link](https://martinnajjar12.github.io/heat-map-smashing-magazine/)
 
 ## Authors
 
-👤 **Author1**
+👤 **Kevin Cotrina**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@githubhandle](https://github.com/kcotrinam92)
+- Twitter: [@twitterhandle](https://twitter.com/KevinCot12)
+- Linkedin: [linkedin](https://www.linkedin.com/in/kevin-cotrina-6208b7149/)
 
-👤 **Author2**
+👤 **Martin Najjar**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@githubhandle](https://github.com/martinnajjar12)
+- Twitter: [@twitterhandle](https://twitter.com/martin_najjar)
+- Linkedin: [linkedin](https://www.linkedin.com/in/martin-najjar-174948198/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/martinnajjar12/heat-map-smashing-magazine/issues).
 
 ## Show your support
 
@@ -67,9 +41,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Heat Map for the [Smashing Magazine website](https://www.smashingmagazine.com/)
 
 ## 📝 License
 
